@@ -20,7 +20,7 @@ def send_notification():
     )
 
 # Main script execution
-shortened_url = "https://forms.gle/NU9KEEuqyqdg3TwK9"  # Replace with your shortened URL
+shortened_url = input("Enter Form URL: ")  # ask for the URL
 
 # Set the path to geckodriver
 geckodriver_path = "C:\\Users\\Lenovo\\PycharmProjects\\automate_check\\drivers\\geckodriver.exe"  # Replace with YOUR actual path

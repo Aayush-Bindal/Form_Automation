@@ -4,8 +4,8 @@ import time
 from plyer import notification
 
 # Function to check if the Google Form is active
-def is_form_active(shortened_url):
-    driver.get(shortened_url)
+def is_form_active(inner_url):
+    driver.get(inner_url)
     time.sleep(2)  # Wait for the redirection to complete
     current_url = driver.current_url
     return "/viewform" in current_url
@@ -20,7 +20,7 @@ def send_notification():
     )
 
 # Main script execution
-shortened_url = input("Enter Form URL: ")  # ask for the URL
+input_url = input("Enter Form URL: ")  # ask for the URL
 
 # Set the path to geckodriver
 geckodriver_path = "C:\\Users\\Lenovo\\PycharmProjects\\automate_check\\drivers\\geckodriver.exe"  # Replace with YOUR actual path
@@ -33,7 +33,7 @@ driver = webdriver.Firefox(service=service)  # Initialize Firefox driver using t
 
 try:
     while True:
-        if is_form_active(shortened_url):
+        if is_form_active(input_url):
             send_notification()
             print("Notification sent. The form is active. Stopping the script.")
             break

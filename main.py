@@ -23,7 +23,7 @@ def send_notification():
 shortened_url = input("Enter Form URL: ")  # ask for the URL
 
 # Set the path to geckodriver
-geckodriver_path = "C:\\Users\\Lenovo\\PycharmProjects\\automate_check\\drivers\\geckodriver.exe"  # Replace with YOUR actual path
+geckodriver_path = "C:\\Users\\Lenovo\\PycharmProjects\\automate_check\\drivers \\geckodriver.exe"  # Replace with YOUR actual path
 
 # Create a Service object
 service = Service(executable_path=geckodriver_path)

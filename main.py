@@ -39,6 +39,6 @@ try:
             break
         else:
             print("Form is still closed. Checking again in 30 seconds...")
-            time.sleep(30)
+            time.sleep(15)
 finally:
     driver.quit()

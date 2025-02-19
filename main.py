@@ -38,7 +38,7 @@ try:
             print("Notification sent. The form is active. Stopping the script.")
             break
         else:
-            print("Form is still closed. Checking again in 30 seconds...")
+            print("Form is still closed. Checking again in 15 seconds...")
             time.sleep(15)
 finally:
     driver.quit()

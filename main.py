@@ -22,11 +22,9 @@ def send_notification():
 # Main script execution
 input_url = input("Enter Form URL: ")  # ask for the URL
 
-# Set the path to geckodriver
-geckodriver_path = "C:\\Users\\Lenovo\\PycharmProjects\\automate_check\\drivers\\geckodriver.exe"  # Replace with YOUR actual path
 
-# Create a Service object
-service = Service(executable_path=geckodriver_path)
+# Create a Service object and set path
+service = Service(r"C:\Selenium_Drivers\geckodriver.exe")   # paste your driver path
 
 driver = webdriver.Firefox(service=service)  # Initialize Firefox driver using the Service
 
